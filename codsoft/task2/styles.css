@@ -1,0 +1,314 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    color: black;
+    font-family: "Fira Sans", sans-serif;
+    background-color: white;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #8cc099;
+}
+
+nav .heading {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #66d9ef;
+}
+
+.sideMenuButton {
+    display: none;
+}
+
+.navbar {
+    display: block;
+}
+
+.sideNavigationBar {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #8cc099;
+    padding: 20px;
+    z-index: 1;
+}
+
+.sideNavigationBar a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+.sideNavigationBar a:hover {
+    background-color: #66d9ef;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.side1 {
+    width: 50%;
+    padding: 20px;
+}
+
+.side1 h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.side1 button {
+    background-color: #8cc099;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.side1 button:hover {
+    background-color: #66d9ef;
+}
+
+.side2 {
+    width: 50%;
+    padding: 20px;
+}
+
+.side2 img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about {
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.content {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.box {
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.topic {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.topic a {
+    color: #8cc099;
+    text-decoration: none;
+}
+
+.topic a:hover {
+    color: #66d9ef;
+}
+
+.contact {
+    padding: 50px;
+    background-color: #f7f7f7;
+}
+
+.contactMenu {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.label1 {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input2 {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.input2 input[type="text"] {
+    width: 100%;
+    padding: 10px;}
+    .input2 input[type="text"]:focus {
+        border: 1px solid #8cc099;
+    }
+    
+    .input2 textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        resize: vertical;
+    }
+    
+    .input2 textarea:focus {
+        border: 1px solid #8cc099;
+    }
+    
+    .button {
+        background-color: #8cc099;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    
+    .button:hover {
+        background-color: #66d9ef;
+    }
+    
+    .footer {
+        padding: 20px;
+        background-color: #f7f7f7;
+        text-align: center;
+    }
+    
+    .footer p {
+        margin-bottom: 10px;
+    }
+    
+    .footer a {
+        color: #8cc099;
+        text-decoration: none;
+    }
+    
+    .footer a:hover {
+        color: #66d9ef;
+    }
+    
+    /* Responsive Design */
+    
+    @media only screen and (max-width: 768px) {
+        .side1, .side2 {
+            width: 100%;
+        }
+        .side1 img, .side2 img {
+            width: 100%;
+            height: 200px;
+        }
+        .boxes {
+            flex-direction: column;
+        }
+        .box {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .contactMenu {
+            padding: 10px;
+        }
+        .input1, .input2 {
+            flex-direction: column;
+        }
+        .label1, .input2 input[type="text"], .input2 textarea {
+            width: 100%;
+        }
+    }
+    
+    @media only screen and (max-width: 480px) {
+        nav {
+            height: 60px;
+        }
+        nav .heading {
+            font-size: 24px;
+        }
+        .line {
+            padding: 20px;
+        }
+        .side1 h1, .title {
+            font-size: 24px;
+        }
+        .side1 button, .button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .footer {
+            padding: 10px;
+        }
+        .footer p {
+            font-size: 14px;
+        }
+    }
